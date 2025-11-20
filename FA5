@@ -1,0 +1,24 @@
+lst = []
+
+print("Please enter your 5 travel destinations:")
+for idx in range(5):
+    print("Destination", idx + 1, ": ", end="")
+    loc = input()
+    lst.append(loc)
+
+print("Original Travel Itinerary:")
+for idx in range(5):
+    print(idx + 1, ".", lst[idx])
+
+print("Let's update your 2nd and 5th destinations.")
+print("Enter a new destination for position 2: ", end="")
+new2 = input()
+print("Enter a new destination for position 5: ", end="")
+new5 = input()
+
+lst[1] = new2
+lst[4] = new5
+
+print("Updated Travel Itinerary:")
+for idx in range(5):
+    print(idx + 1, ".", lst[idx])
